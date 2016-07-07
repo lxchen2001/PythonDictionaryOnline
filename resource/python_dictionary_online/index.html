@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;"/>
+    <title>Python Dictionary Online</title>
+    <link rel="shortcut icon" href="/resource/python_dictionary_online/favicon.ico"/>
+    <link href="/resource/python_dictionary_online/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="/resource/python_dictionary_online/bootstrap/html5shiv.min.js"></script>
+    <script src="/resource/python_dictionary_online/bootstrap/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+        function resizeIframe(obj) {
+            var body = document.body,
+            html = document.documentElement;
+            var height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
+            obj.setAttribute('height', height - 50 + 'px')
+        }
+    </script>
+</head>
+<body>
+<input id="python-dictionary-online-q" type="hidden" value="${python_dictionary_online_q}">
+<div>
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#tab_pane_cn_bing_com" aria-controls="home" role="tab" data-toggle="tab">必应词典</a></li>
+    <li role="presentation"><a href="#tab_pane_dict_youdao_com" aria-controls="profile" role="tab" data-toggle="tab">有道词典</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="tab_pane_cn_bing_com">
+        <iframe src="/cn_bing_com/${python_dictionary_online_q}" scrolling="yes" onload="resizeIframe(this)" frameborder="0" height="100%" width="100%"></iframe>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="tab_pane_dict_youdao_com">
+        <iframe src="/dict_youdao_com/${python_dictionary_online_q}" scrolling="yes" onload="resizeIframe(this)" frameborder="0" height="100%" width="100%"></iframe>
+    </div>
+  </div>
+
+</div>
+
+<script src="/resource/python_dictionary_online/bootstrap/jquery.min.js"></script>
+<script src="/resource/python_dictionary_online/bootstrap/js/bootstrap.min.js"></script>
+<script src="/resource/python_dictionary_online/index.js"></script>
+
+</body>
+</html>

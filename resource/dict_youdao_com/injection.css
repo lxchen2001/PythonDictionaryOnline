@@ -1,0 +1,7 @@
+*{word-wrap:break-word!important;font-family:Arial,sans-serif;color:#000;font-size:13px;margin:0;padding:0}
+ul{padding-left:0}
+li{list-style:none}
+.trans-container:first-of-type{font-weight:bold}
+#examples_sentences li{margin-top:1em;font-weight:normal}
+#examples_sentences li b{color:#638c0b}
+.example-title{margin-top:1em;font-weight:bold;font-size:larger}
