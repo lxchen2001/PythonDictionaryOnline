@@ -35,8 +35,8 @@ content_type_map = {
     'woff2': 'application/font-woff2',
 }
 
-# resource_path = '/xxx/PythonDictionaryOnline/resource'
-resource_path = os.path.join(sys.path[0], 'resource')
+resource_path = 'D:\\GitHub\\PythonDictionary'
+#resource_path = os.path.join(sys.path[0], 'resource')
 print('resource_path:' + resource_path)
 
 
